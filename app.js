@@ -67,6 +67,7 @@ const storeItems = [
     },
 ];
 
+// Going through storeItems array and appending them to index.html
 for (let i = 0; i < storeItems.length; i++) {
     if (storeItems[i].inStock === true) {
       $("#huge").append('<div class="productContainer">'
@@ -77,11 +78,10 @@ for (let i = 0; i < storeItems.length; i++) {
     };
   };
 
+// Will toggle each divs class in here
 $(".toggleButton").click(function(){
-    // Will toggle each divs class in here
     $("#body").toggleClass("darkBody");
     $(".h1").toggleClass("darkH1");
     $(".toggleButton").toggleClass("darkToggleButton");
     $(".productContainer").toggleClass("darkProductContainer");
-    //$("#***Div ID***").toggleClass("***CSS Class***");
 });
